@@ -1,0 +1,188 @@
+.banner{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("../images/brown-background.jpg");
+    background-blend-mode: screen;
+    background-color: #ffffff7a;
+    background-size: cover;
+    background-position: right;
+    border: medium inset #000000;
+    nav {
+        width: stretch;
+        text-align: center;
+        background-color: #ffffff;
+        border-bottom: medium inset #000000;
+        a {
+            text-decoration: none;
+            color: #000000;
+            margin: 2%;
+        }     
+    }
+    h1 {
+        font-weight: bold;
+        text-shadow: 0px 0px 10px #ffffff, -1px 1px 5px #ffffff;
+        letter-spacing: 0.3px;
+    }
+}
+
+.skip-content {
+    position: absolute;
+    top: -3em;
+    background: #000000;
+}
+
+.skip-content:focus {
+    top: 0;
+}
+
+.meaningful-text{
+    text-shadow: 1px 1px 1px #b39573;
+    text-align: right;
+}
+
+.image-box{
+    display: grid;
+    grid-gap: 1mm;
+    grid-template-areas: 
+    "a a b b c c"
+    "a a . . c c"
+    "a a d d c c";
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .portrait-img-1{
+        grid-area: a;
+        border-radius: 15px 0px 0px 15px;
+    }
+    
+    .landscape-img-2{              
+        grid-area: b;
+        border-radius: 0px 0px 15px 15px;
+    }
+    
+    .portrait-img-2{
+        grid-area: c;
+        border-radius: 0px 15px 15px 0px;
+    }
+    
+    .landscape-img-3{
+        grid-area: d; 
+        border-radius: 15px 15px 0px 0px;
+    }
+}
+
+.neighborhood-images{
+    display: grid;
+    grid-gap: 1mm;
+    grid-template-areas:
+    "a b e"
+    "a d e"
+    "c f g"
+    "c h g";
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .portrait-img-1{
+        grid-area: a;
+        margin: auto;
+        clip-path: padding-box circle(66%);
+    }
+    
+    .landscape-img-1{              
+        grid-area: b;
+        align-self: flex-end;
+    }
+    
+    .portrait-img-2{
+        grid-area: c;
+        margin: auto;
+        clip-path: padding-box circle(65%);
+    }
+    
+    .landscape-img-2{
+        grid-area: d; 
+        align-self: flex-start;
+    }
+
+    .portrait-img-3{
+        grid-area: e;
+        margin: auto;
+        clip-path: padding-box circle(66%);
+    }
+
+    .landscape-img-3 {
+        grid-area: f;
+        align-self: flex-end;
+    }
+
+    .portrait-img-4{
+        grid-area: g;
+        margin: auto;
+    }
+
+    .landscape-img-4{
+        grid-area: h;
+        align-self: flex-start;
+    }
+}
+
+.park-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    img{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .portrait-img-1{
+        clip-path: padding-box circle(44%);
+    }
+
+    .portrait-img-2{
+        clip-path: padding-box circle(42%);
+    }
+
+    .portrait-img-3{
+        clip-path: padding-box circle(39%);
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva';
+    background-image: url("../images/brown-wallpaper.jpg");
+    background-color: #ffffff67;
+    background-blend-mode: screen;
+    main{
+        width: 80%;
+        align-items: center;
+        margin: 3% auto;
+        p{
+            background-color: #ffffff99;
+            border: thin solid #000000;
+            border-radius: 15px;
+            padding: 2%;
+            text-align: justify;
+            line-height: 1.6;
+        }
+    }
+}
+
+footer{
+    font-size: x-small;
+}
+
